@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Clock</title>
+  <link rel = "styleSheet" href="style.css">
+</head>
+<body>
+  <div class="controler">
+    <div class=""header-clock">
+      <ul class="header-tab">
+        <li class="timer" id = "timerSelect">Timer</li>
+        <li class="stop-watch" id = "stwatchSelect">StopWatch</li>
+      </ul>
+    </div>
+    <div class="body-clock">
+      <div class="timer-frame">
+        <span class="timer-cell" id = "countdown">
+          <input type="number" class="ipTime" id="setHours" placeholder="0" pattern="[0-9]{2}">
+          <span class="step">h</span>
+          <input type="number" class="ipTime" id="setMinutes" placeholder="0" pattern="[0-9]{2}">
+          <span class="step">m</span>
+          <input type="number" class="ipTime" id="setSeconds" placeholder="0" pattern="[0-9]{2}">
+          <span>s</span>
+        </span>
+      </div>
+      <div class="action-nav">
+        <button class="action-bt start" id="start">Start</button>
+        <button class="action-bt reset" id="reset">Reset</button>
+      </div>
+    </div>
+  </div> 
+  
+  <script src = "main.js"></script>
+</body>
+</html>
