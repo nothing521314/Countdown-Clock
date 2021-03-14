@@ -1,5 +1,7 @@
 html {
-  background-color: coral;
+  background: url("wp2570965.jpg");
+  background-size: cover;
+  display: block;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -29,16 +31,15 @@ html {
 }
 
 .timer {
-  /* border: 2px solid darkgray; */
   font-size: 16px;
-  color: darkgray;
   margin: 0 0;
   padding: 10px;
   width: 50%;
+  border-bottom: 2px solid #3287f5;
+  color: #3287f5;
 }
 
 .stop-watch {
-  /* border: 2px solid darkgray; */
   font-size: 16px;
   color: darkgray;
   margin: 0;
@@ -61,7 +62,6 @@ html {
   border-bottom: 2px solid darkgray;
   font-size: 40px;
   margin: 0;
-  padding: 0 10px;
   color: black;
 }
 
@@ -128,22 +128,19 @@ button {
   color: #1a73e8;
 }
 
-.animation {
-  background-color: #1a73e8;
-  height: 2px;
-  top: 166px;
-  margin: 0;
-  width: auto;
-  position: absolute;
-  animation-timing-function: linear;
-  animation-name: act-progress-bar-anim;
-  animation-duration: 0ms;
+.sw-frame {
+  margin: 20px 0;
+  padding: 0px 20px;
+  color: black;
+  text-align: left;
 }
 
-.act-tim-digit {
-  border: none;
-  border-right: 1px solid transparent;
-  font-size: 62px;
-  outline: none;
-  width: 38px;
+.sw-cell {
+  font-size: 40px;
+  margin: 0;
+}
+
+.sw-step {
+  margin-left: -10px;
+  padding: 0;
 }
