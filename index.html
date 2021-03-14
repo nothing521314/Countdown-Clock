@@ -16,34 +16,22 @@
     <div class="body-clock">
       <div class="timer-frame">
         <span class="timer-cell" id = "countdown">
-          <span><input type="number" class="ipTime" id="setHours" placeholder="0" pattern="[0-9]{2}"></span>
+          <input type="number" class="ipTime" id="setHours" placeholder="0" pattern="[0-9]{2}">
           <span class="step">h</span>
-          <span><input type="number" class="ipTime" id="setMinutes" placeholder="0" pattern="[0-9]{2}"></span>
+          <input type="number" class="ipTime" id="setMinutes" placeholder="0" pattern="[0-9]{2}">
           <span class="step">m</span>
-          <span><input type="number" class="ipTime" id="setSeconds" placeholder="0" pattern="[0-9]{2}"></span>
+          <input type="number" class="ipTime" id="setSeconds" placeholder="0" pattern="[0-9]{2}">
           <span>s</span>
         </span>
       </div>
       <div class="action-nav">
+        <div class="animation"></div>
         <button class="action-bt start" id="start">Start</button>
         <button class="action-bt reset" id="reset">Reset</button>
       </div>
     </div>
   </div> 
   
-  <script src = "main.js">
-function changeTime() {
-  clearInterval(countdown);
-  htmlChange.innerHTML = 
-  `
-    <span><input type="number" class="ipTime" id="setHours" placeholder="0" pattern="[0-9]{2}"></span>
-    <span class="step">h</span>
-    <span><input type="number" class="ipTime" id="setMinutes" placeholder="0" pattern="[0-9]{2}"></span>
-    <span class="step">m</span>
-    <span><input type="number" class="ipTime" id="setSeconds" placeholder="0" pattern="[0-9]{2}"></span>
-    <span>s</span>
-  `
-}  
-  </script>
+  <script src = "main.js"></script>
 </body>
 </html>
